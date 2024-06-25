@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <>
      <div>
-     <div className=" w-[80rem] h-[100px] flex flex-col items-center ">
+     <div className=" w-screen h-[100px] flex flex-col items-center ">
         <div className=" absolute z-[-2] w-auto h-auto overflow-hidden ">
           <Image src={background} alt="img background" />
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
        
          <p ref={texPRef} className="text-gray-300 text-center text-[16px]">
           Com a <span className="text-rose-400 font-bold">Yhanko</span> o crescimento, a expansão <br />
-          e a funcionalidade do seu projeto é easy
+          e a funcionalidade do seu projeto estará em outro nível
          </p>
          </div>
          <div ref={btnRef}  className="flex gap-[15px]">
@@ -83,9 +83,10 @@ export default function Home() {
           <button className="bg-white px-[40px] text-gray-400 font-medium shadow-[0_15px_45px_-12px_rgba(0,0,0,0.3)] py-[12px] rounded-full text-[13px] text-zinc-800">
             About me
           </button>
+          
          </div>
        </div>
-       <div className="seta absolute top-[44rem] left-[5rem]">
+       <div className="seta absolute -mt-4 left-[5.5rem]">
         <Image 
            src={seta}
            alt="seta"
@@ -94,12 +95,12 @@ export default function Home() {
        
       </div>
      
-      <section className="bg-slate-300 z-40 w-screen h-[600px] mt-[45.175rem] flex flex-col justify-center items-center">
+      <section className="bg-slate-300 z-40 w-screen h-[600px] mt-[43rem] flex flex-col justify-center items-center">
       <Slider />
      </section>
 
-     <section className="bg-white w-screen h-[600px]  flex flex-col justify-center items-center">
-      <div className="absolute z-30 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[5rem] h-[5rem] rounded-full -ml-[72rem] -mt-[37.5rem]"></div>
+     <section className="bg-white z-40 w-screen h-[600px]  flex flex-col justify-center items-center">
+      <div className="absolute z-0 bg-[#57007B] bg-gradient-to-r from-[#57007B] to-[#F76680]  w-[5rem] h-[5rem] rounded-full -ml-[72rem] -mt-[37.5rem]"></div>
 
       <SlidesContainer />
      </section>
