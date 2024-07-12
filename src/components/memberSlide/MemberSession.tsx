@@ -1,7 +1,7 @@
 //Importação do Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { register } from 'swiper/element/bundle';
-import { A11y, Navigation, Pagination, Autoplay } from 'swiper/modules';
+import {  Pagination, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 //Estilos do Swiper
 import 'swiper/css';
@@ -42,10 +42,10 @@ export function MemberSession(){
                   <div className="flex gap-5 mb-5 flex-col w-screen h-screen " key={index}>
                     <Image src={user.img} alt="foto perfil" width={70} height={70}  className='ml-[80px]'/>
                     <div className="flex flex-col gap-1 ">
-                    <span className="text-[16px] text-slate-700">
+                    <span className="text-[16px] font-semibold text-slate-700">
                       {user.name}
                     </span>
-                    <span className="text-[12px] text-zinc-600">
+                    <span className="text-[12px] font-semibold text-zinc-600">
                       {user.devType}
                     </span>
                   </div>
